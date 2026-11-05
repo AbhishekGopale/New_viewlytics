@@ -1,0 +1,311 @@
+/* ==============================================================
+   Viewlytics - Production Styling Enhancements
+   1. Login Layout & Form Polish (Matched to Port 3002)
+   2. Input Spacing (Lock Icon & Password Clear Separation)
+   3. Topbar & Footer Logo Resizing & Aspect Ratio Scaling
+   ============================================================== */
+
+/* Ensure full viewport height */
+html, body, #root, .pages-body.login-page {
+    height: 100% !important;
+    min-height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+}
+
+/* --------------------------------------------------------------
+   1. LOGIN PAGE: 50% / 50% SPLIT GRID & HERO
+   -------------------------------------------------------------- */
+.loginpage {
+    display: grid !important;
+    grid-template-columns: 50% 50% !important;
+    height: 100vh !important;
+    width: 100vw !important;
+    overflow: hidden !important;
+}
+
+/* Left Column: Full-height polygon geometric wallpaper */
+.loginpage > div:first-child {
+    background-image: url('/assets/layout/images/pages/loginbg.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    height: 100% !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+}
+
+/* Hide redundant top-left corner logo on the left */
+.loginpage > div:first-child > div:first-child {
+    display: none !important;
+}
+
+/* Center and size the Welcome To IDONNEOUS emblem */
+.loginpage > div:first-child > div:last-child {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+
+.loginpage .logingif {
+    width: 380px !important;
+    max-width: 85% !important;
+    height: auto !important;
+    animation: none !important;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.06)) !important;
+}
+
+/* --------------------------------------------------------------
+   2. LOGIN PAGE: RIGHT COLUMN & CARD
+   -------------------------------------------------------------- */
+.loginpage > div:last-child {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #ffffff !important;
+    height: 100% !important;
+    position: relative !important;
+    padding: 2rem !important;
+}
+
+/* Hide clumsy blue text outside the card */
+.loginpage .logintitle,
+.loginpage > div:last-child > div.pl-4 {
+    display: none !important;
+}
+
+/* Corporate Brand Logo positioned directly above the card */
+.loginpage .input-panel {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 25rem !important;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08) !important;
+    border-radius: 8px !important;
+    border: 1px solid #e9ecef !important;
+    background: #ffffff !important;
+    padding: 2rem 1.75rem 1.75rem 1.75rem !important;
+    position: relative !important;
+    margin-top: 50px !important;
+}
+
+.loginpage .input-panel::before {
+    content: "" !important;
+    display: block !important;
+    width: 230px !important;
+    height: 75px !important;
+    position: absolute !important;
+    top: -95px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    background-image: url('/static/media/logo.c43139c47bdcbd817b91.png') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+/* Internal "Sign In" header inside the card */
+.loginpage .input-panel::after {
+    content: "Sign In" !important;
+    display: block !important;
+    order: -1 !important;
+    text-align: center !important;
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: #212529 !important;
+    margin-bottom: 1.25rem !important;
+}
+
+/* --------------------------------------------------------------
+   3. INPUT SPACING & ICON POSITIONING (NO OVERLAP)
+   -------------------------------------------------------------- */
+/* Common Input Field Styling */
+.loginpage .p-inputtext {
+    width: 100% !important;
+    border-radius: 4px !important;
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+}
+
+/* Left Icon Container (Username / Email) */
+.loginpage .p-input-icon-left {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+}
+
+.loginpage .p-input-icon-left > i,
+.loginpage .p-input-icon-left > .pi-user,
+.loginpage .p-input-icon-left > .pi-envelope {
+    left: 0.95rem !important;
+    right: auto !important;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    margin: 0 !important;
+    font-size: 1.05rem !important;
+    color: rgba(0, 0, 0, 0.55) !important;
+    z-index: 2 !important;
+    pointer-events: none !important;
+}
+
+.loginpage .p-input-icon-left > .p-inputtext,
+.loginpage .p-input-icon-left > input {
+    padding-left: 2.85rem !important; /* Generous 45px space so text never touches icon */
+    padding-right: 1rem !important;
+    padding-top: 0.7rem !important;
+    padding-bottom: 0.7rem !important;
+}
+
+/* Right Icon Container (Password with left Lock and right Eye) */
+.loginpage .p-input-icon-right {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+}
+
+/* Left Lock Icon inside Password field */
+.loginpage .p-input-icon-right > i.pi-lock,
+.loginpage .p-input-icon-right > .pi-lock {
+    left: 0.95rem !important;
+    right: auto !important;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    margin: 0 !important;
+    font-size: 1.05rem !important;
+    color: rgba(0, 0, 0, 0.55) !important;
+    z-index: 2 !important;
+    pointer-events: none !important;
+}
+
+/* Right Eye Toggle Icon inside Password field */
+.loginpage .p-input-icon-right > i.pi-eye,
+.loginpage .p-input-icon-right > i.pi-eye-slash,
+.loginpage .p-input-icon-right > .pi-eye,
+.loginpage .p-input-icon-right > .pi-eye-slash {
+    right: 0.95rem !important;
+    left: auto !important;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    margin: 0 !important;
+    font-size: 1.05rem !important;
+    color: rgba(0, 0, 0, 0.55) !important;
+    cursor: pointer !important;
+    z-index: 2 !important;
+}
+
+/* Password Input Padding: generous 52px space on left - clear of lock icon */
+.loginpage .p-input-icon-right > .p-inputtext,
+.loginpage .p-input-icon-right > input,
+.p-input-icon-right > input {
+    padding-left: 3.25rem !important;  /* 52px space on left - clear of lock icon! */
+    padding-right: 2.85rem !important; /* 45px space on right - clear of eye icon! */
+    padding-top: 0.7rem !important;
+    padding-bottom: 0.7rem !important;
+    letter-spacing: 0.12em !important;  /* Elegant spacing between dots */
+}
+
+/* --------------------------------------------------------------
+   4. BUTTON & LINK STYLING
+   -------------------------------------------------------------- */
+.loginpage .login-button {
+    width: 100% !important;
+}
+
+.loginpage .login-button.p-button,
+.loginpage .p-button {
+    border-radius: 4px !important;
+    padding: 0.75rem 1rem !important;
+    font-weight: 600 !important;
+}
+
+.loginpage a, 
+.loginpage .link-text {
+    color: #1565c0 !important;
+    font-size: 0.9rem !important;
+    text-decoration: none !important;
+}
+
+.loginpage a:hover, 
+.loginpage .link-text:hover {
+    text-decoration: underline !important;
+}
+
+/* --------------------------------------------------------------
+   5. TOPBAR & FOOTER LOGO RESIZING (NO OVERFLOW, NO CLIPPING)
+   -------------------------------------------------------------- */
+/* Topbar App Logo: resized to fit cleanly inside 4rem topbar */
+#app-logo,
+.layout-topbar .layout-topbar-left .layout-topbar-logo img,
+.layout-topbar-logo img {
+    height: 2.35rem !important;          /* ~38px height inside 64px topbar */
+    max-height: 38px !important;
+    width: auto !important;
+    max-width: 13rem !important;
+    object-fit: contain !important;
+    object-position: left center !important;
+    display: inline-block !important;
+    margin: auto 0 !important;
+    padding: 2px 0 2px 8px !important;
+    vertical-align: middle !important;
+}
+
+.layout-topbar .layout-topbar-left .layout-topbar-logo {
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    padding-left: 0.5rem !important;
+    padding-right: 2rem !important;
+    overflow: hidden !important;
+}
+
+/* Footer Logo: resized to fit cleanly inside footer bar */
+#footer-logo,
+.layout-footer img {
+    height: 1.85rem !important;          /* ~30px height inside 48px footer */
+    max-height: 30px !important;
+    width: auto !important;
+    max-width: 11rem !important;
+    object-fit: contain !important;
+    object-position: left center !important;
+    margin: 4px 20px !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+
+.layout-footer {
+    display: flex !important;
+    align-items: center !important;
+    min-height: 2.75rem !important;
+    padding: 0.25rem 1.5rem !important;
+}
+
+/* --------------------------------------------------------------
+   6. RESPONSIVE ADJUSTMENTS
+   -------------------------------------------------------------- */
+@media (max-width: 900px) {
+    .loginpage {
+        grid-template-columns: 1fr !important;
+        overflow-y: auto !important;
+        height: auto !important;
+    }
+    .loginpage > div:first-child {
+        min-height: 260px !important;
+        padding: 2rem 1rem !important;
+    }
+    .loginpage .logingif {
+        width: 260px !important;
+    }
+    .loginpage > div:last-child {
+        padding: 3rem 1rem !important;
+    }
+}
