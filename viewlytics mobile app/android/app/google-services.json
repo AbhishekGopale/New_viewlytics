@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "990611695393",
+    "project_id": "idonneous-ceb21",
+    "storage_bucket": "idonneous-ceb21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990611695393:android:585f0697e6491a65d84060",
+        "android_client_info": {
+          "package_name": "com.idonneous.viewlytics"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ZZnc02s0HJxJQVliPA5aw3s14ZYiFGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

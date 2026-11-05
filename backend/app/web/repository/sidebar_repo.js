@@ -1,0 +1,1 @@
+const chainModel = require('../../admin/models/chain')

@@ -1,0 +1,15 @@
+export const FontsFamily = {
+  Bold: "Qartella-Bold",
+  ExtraBold: "Qartella-ExtraBold",
+  Heavy: "Qartella-Heavy",
+  Light: "Qartella-Light",
+  Regular: "Qartella-Regular",
+  NotoSansBold: "NotoSans-Bold",
+  NotoSansRegular: "NotoSans-Regular",
+  NotoSansExtraBold: "NotoSans-ExtraBold",
+  NotoSerifBoldNotoSerif: "NotoSerif-Bold",
+  NotoSerifRegular: "NotoSerif-Regular",
+  NotoSansMedium: "NotoSans-Medium",
+  RobotoRegular: "Roboto-Regular",
+  RobotoMedium: "Roboto-Medium",
+};
