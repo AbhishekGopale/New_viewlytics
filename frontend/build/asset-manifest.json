@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4284be42.css",
+    "main.js": "/static/js/main.189be5f3.js",
+    "static/js/765.45e6eae4.chunk.js": "/static/js/765.45e6eae4.chunk.js",
+    "static/js/301.873ff4e6.chunk.js": "/static/js/301.873ff4e6.chunk.js",
+    "static/media/loginbg.jpg": "/static/media/loginbg.84b24b44fd532559b627.jpg",
+    "static/media/primeicons.svg": "/static/media/primeicons.e1441b135b3ca9ad643c.svg",
+    "static/media/primeicons.eot": "/static/media/primeicons.d44157bdfa026dc877af.eot",
+    "static/media/primeicons.woff": "/static/media/primeicons.10d3152104f2208ac82a.woff",
+    "static/media/primeicons.ttf": "/static/media/primeicons.ea5358601d0a3fd6670b.ttf",
+    "static/media/logo.png": "/static/media/logo.acb1991987a29b9f416a.png",
+    "static/media/mainlogo.png": "/static/media/mainlogo.acb1991987a29b9f416a.png",
+    "static/media/flags_responsive.png": "/static/media/flags_responsive.266bf78d57b6c463405e.png",
+    "static/media/primeicons.woff2": "/static/media/primeicons.78172950b335ccdb94e2.woff2",
+    "static/media/bglogo2.png": "/static/media/bglogo2.56430d50f79d04e62ec4.png",
+    "static/media/color.png": "/static/media/color.6441e63a57ccc5105bad.png",
+    "static/media/add_store_excel.xlsx": "/static/media/add_store_excel.d46ed0bcb5a12ee55651.xlsx",
+    "static/media/sku_excel.xlsx": "/static/media/sku_excel.e13645bc2675b3fc2cff.xlsx",
+    "static/media/sample_promo.xlsx": "/static/media/sample_promo.bec72fb42c6c79069508.xlsx",
+    "static/media/chain_sample_excel.xlsx": "/static/media/chain_sample_excel.f3766c328d1059f781de.xlsx",
+    "static/media/project_sample_excel.xlsx": "/static/media/project_sample_excel.47ed4ce3b3588de4f6c2.xlsx",
+    "index.html": "/index.html",
+    "static/media/task_excel.csv": "/static/media/task_excel.20e91719a23f6ed5b2c7.csv",
+    "static/media/sample_target.csv": "/static/media/sample_target.ac4d90773625ea5f476d.csv"
+  },
+  "entrypoints": [
+    "static/css/main.4284be42.css",
+    "static/js/main.189be5f3.js"
+  ]
+}
